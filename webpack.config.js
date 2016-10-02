@@ -85,7 +85,7 @@ switch (ENV) {
         ({ filename: 'styles.css', allChunks: true, sourceMap: false }),
 
       require('@easy-webpack/config-sass')
-        ({ filename: 'custom.scss', allChunks: true, sourceMap: false }),        
+        ({ filename: 'custom.css', allChunks: true, sourceMap: false }),        
 
       require('@easy-webpack/config-fonts-and-images')(),
       require('@easy-webpack/config-global-bluebird')(),
@@ -151,7 +151,7 @@ switch (ENV) {
         ({ filename: 'styles.css', allChunks: true, sourceMap: false }),
 
      require('@easy-webpack/config-sass')
-        ({ filename: 'custom.scss', allChunks: true, sourceMap: false }),               
+        ({ filename: 'custom', allChunks: true, sourceMap: false }),               
 
       require('@easy-webpack/config-fonts-and-images')(),
       require('@easy-webpack/config-global-bluebird')(),

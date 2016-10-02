@@ -1,10 +1,9 @@
 ﻿import {Aurelia} from 'aurelia-framework';
 // we want font-awesome to load as soon as possible to show the fa-spinner
-import '../styles/styles.css';
-import '../styles/custom.scss';
 import 'font-awesome/css/font-awesome.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
+import '../styles/styles.css';
 
 // comment out if you don't want a Promise polyfill (remove also from webpack.config.js)
 import * as Bluebird from 'bluebird';
@@ -21,6 +20,7 @@ export async function configure(aurelia: Aurelia) {
 
   // Anyone wanting to use HTMLImports to load views, will need to install the following plugin.
   // aurelia.use.plugin('aurelia-html-import-template-loader')
+ 
 
   await aurelia.start();
   aurelia.setRoot('app');
