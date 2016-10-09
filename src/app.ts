@@ -8,6 +8,7 @@ export class App {
     config.title = 'Aurelia';
     config.map([
       { route: ['', 'dashboard'], name: 'dashboard',      moduleId: './content/dashboard',      nav: true, title: 'Dashboard' },
+      { route: 'inbox', name: 'inbox',      moduleId: './content/inbox',      nav: true, title: 'Inbox' },
       { route: 'welcome', name: 'welcome',      moduleId: './welcome',      nav: true, title: 'Welcome' },
       { route: 'users',         name: 'users',        moduleId: './users',        nav: true, title: 'Github Users' },
       { route: 'child-router',  name: 'child-router', moduleId: './child-router', nav: true, title: 'Child Router' }

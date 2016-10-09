@@ -1,16 +1,13 @@
 <template>
   <require from="./menu/topbar.html"></require>
-  <require from="./menu/sidebar2.html"></require>
+  <require from="./menu/sidebar.html"></require>
   <require from="./controls/custom-footer.html"></require>
-
   
   <div class="container body">
     <div class="main_container">        
-      <sidebar2 router.bind="router"></sidebar2>
-      <topbar></topbar>
-      <!--router plgus in content here-->
-      <router-view></router-view>
-  
+      <compose view-model='./menu/sidebar' router.bind="router"></compose>
+      <compose view-model='./menu/topbar'></compose>
+      <router-view></router-view> 
       <custom-footer></custom-footer>
     </div>
   </div>
