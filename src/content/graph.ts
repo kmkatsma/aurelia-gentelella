@@ -31,15 +31,11 @@ export class Graph {
     this.dataseries  = {
        data: [this.data1, this.data2]
     };
-    this.dataseries.data = [this.data1,this.data2];
+    //this.dataseries.data = [this.data1,this.data2];
    
   }
   
   attached() {    
-    console.log("attached");
-    console.log($.isFunction($));
-    $.trim('text');
-    let x = $("#canvas_dahs"); 
     $.plot($("#canvas_dahs"), this.dataseries.data, {
           series: {
             lines: {

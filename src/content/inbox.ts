@@ -1,7 +1,4 @@
-export class Inbox {
- 
-    
-
+export class Inbox {  
 }
   
      
