@@ -1,4 +1,12 @@
-# aurelia-skeleton-webpack
+# aurelia-gentelella
+
+This repo is a fork off of aurelia <a href="https://github.com/aurelia/skeleton-navigation/tree/master/skeleton-typescript-webpack">typescript webpack skeleton</a> modified to utilize the <a href="https://github.com/puikinsh/gentelella">Gentelella</a> free bootstrap theme
+
+It does not currently have support for all the pages of existing gentelella, and some of the javascript tools (like pie charts) needed for dashboard controls have not yet been incorporated in project. 
+
+### Other dependencies (jquery-flot) 
+**jquery-flot**
+The hardest challenge to the conversion was incorporation of jquery-flot.  Jquery-flot doesn't follow module patterns currently in use for webpack/typescript, so had to do some individual file imports. I also had to bring in the flot-spline depency as a file import from a "vendors" folder.  I did not want to use bower, which is the only library source for this file currently - at least that which I could find.
 
 ## Getting started
 
@@ -157,37 +165,3 @@ Integration tests are performed with [Protractor](http://angular.github.io/protr
   npm run e2e:start
   ```
 
-## Electron (coming soon)
-
-To add Electron support to the skeleton, first run:
-
-```shell
-npm run electron:setup
-```
-
-Once the packages are installed, you may either view your app in Electron or build application packages for production:
-
-```shell
-# developing on Electron with live-reload
-npm run electron:start
-
-# creates packages for the current operating system
-npm run electron:package
-
-# creates packages for all operating systems
-npm run electron:package:all
-```
-
-The entry-file for Electron can be found in `config/electron.entry.development.ts`.
-
-Building or creating the Electron package will create a file `electron.js` in the root directory of the skeleton.
-
-### Loading native packages in Electron
-
-If you have packages that cannot work in the Electron Renderer process (e.g. native packages), or wish to use the package in the renderer process as if it is running under Node, list them under `externals`, in the file `config/webpack.electron.js`.
-
-## Acknowledgments
-
-Parts of code responsible for Webpack configuration were inspired by or copied from @AngularClass' [angular2-webpack-starter](https://github.com/AngularClass/angular2-webpack-starter).
-
-Parts of code responsible for Webpack-Electron configuration and packaging were inspired by or copied from @chentsulin's [electron-react-boilerplate](https://github.com/chentsulin/electron-react-boilerplate).
