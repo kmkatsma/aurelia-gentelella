@@ -1,31 +1,18 @@
 <template>
-  <require from="./nav-bar-new.html"></require>
-  <require from="./dashboard.html"></require>
+  <require from="./menu/topbar.html"></require>
+  <require from="./menu/sidebar2.html"></require>
+  <require from="./controls/custom-footer.html"></require>
+
   
-  <div class="container body" >
-    <div class="main_container" >
-      <nav-bar-new router.bind="router"></nav-bar-new>
-   
-      <div class="right_col" role="main">
-
-        <!--dashboard router.bind="router"></dashboard-->
-
-        <div class="page-host">
-          <router-view></router-view>
-        </div>
-         
-        <br />
-        
-        <!-- footer content -->
-        <footer>
-          <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
-          </div>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
-
-      </div>
+  <div class="container body">
+    <div class="main_container">        
+      <sidebar2 router.bind="router"></sidebar2>
+      <topbar></topbar>
+      <!--router plgus in content here-->
+      <router-view></router-view>
+  
+      <custom-footer></custom-footer>
     </div>
   </div>
+     
 </template>

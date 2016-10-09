@@ -6,14 +6,20 @@
     <base href="<%- webpackConfig.metadata.baseUrl %>">
     <!-- imported CSS are concatenated and added automatically -->
   </head>
-  <body class="nav-md" aurelia-app="main">
-    <div class="splash">
-      <div class="message"><%- webpackConfig.metadata.title %></div>
-      <i class="fa fa-spinner fa-spin"></i>
-    </div>
-    <% if (webpackConfig.metadata.ENV === 'development') { %>
-    <!-- Webpack Dev Server reload -->
-    <script src="/webpack-dev-server.js"></script>
-    <% } %>             
+  <body class="nav-md"  aurelia-app="main"> 
+
+        
+          <!--div class="splash">
+            <div class="message"><%- webpackConfig.metadata.title %>
+            </div>
+            <i class="fa fa-spinner fa-spin"></i>
+          </div>
+        </div-->
+    
+        <% if (webpackConfig.metadata.ENV === 'development') { %>
+        <!-- Webpack Dev Server reload -->
+        <script src="/webpack-dev-server.js"></script>
+        <% } %>   
+  
   </body>
 </html>

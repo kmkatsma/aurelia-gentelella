@@ -153,6 +153,7 @@ switch (ENV) {
      require('@easy-webpack/config-sass')
         ({ filename: 'custom', allChunks: true, sourceMap: false }),               
 
+      //require('@easy-webpack/custom')(),
       require('@easy-webpack/config-fonts-and-images')(),
       require('@easy-webpack/config-global-bluebird')(),
       require('@easy-webpack/config-global-jquery')(),
